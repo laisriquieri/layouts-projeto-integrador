@@ -1,30 +1,8 @@
 
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
-  }
-  
   @font-face {
-    font-family: Montserrat-ExtraBold;
-    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    src: url('../fonts/Verdana.ttf'); 
   }
-  
-  @font-face {
-    font-family: Montserrat-Bold;
-    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-  }
-  
-  
-  /*//////////////////////////////////////////////////////////////////
-  [ RESTYLE TAG ]*/
-  
-  
   
   
   * {
@@ -35,12 +13,11 @@
   
   body, html {
       height: 100%;
-      font-family: Montserrat-Regular, sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  /*---------------------------------------------*/
   a {
-      font-family: Montserrat-Regular;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -60,15 +37,12 @@
     color: #fff;
   }
   
-  
-  
-  /*---------------------------------------------*/
   h1,h2,h3,h4,h5,h6 {
       margin: 0px;
   }
   
   p {
-      font-family: Montserrat-Regular;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -131,27 +105,16 @@
       border: none !important;
   }
   
-  
-  /*//////////////////////////////////////////////////////////////////
-  [ Utility ]*/
   .txt1 {
-    font-family: Montserrat-Regular;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: #cccccc;
+    color: #ffffff;
     line-height: 1.4;
   }
   
   .bo1 {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #ffffff;
   }
-  
-  .hov1:hover {
-    border-color: #d33f8d;
-  }
-  
-  
-  /*//////////////////////////////////////////////////////////////////
-  [ login ]*/
   
   .limiter {
     width: 100%;
@@ -169,11 +132,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: -225px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
     position: relative;
     z-index: 1;
   }
@@ -216,12 +177,11 @@
   }
   
   .login100-form-title {
-    font-family: Montserrat-ExtraBold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     color: #fff;
     line-height: 1.2;
     text-align: center;
-  
     width: 100%;
     display: block;
   }
@@ -233,6 +193,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
+    margin-top: -110px;
   }
   .login100-form-avatar img {
     width: 100%;
@@ -247,11 +208,10 @@
   }
   
   .input100 {
-    font-family: Montserrat-Bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     line-height: 1.2;
     color: #333333;
-  
     display: block;
     width: 100%;
     background: #fff;
@@ -295,7 +255,7 @@
     }
   }
   
-  .symbol-input100 {
+  #symbol-input100 {
     font-size: 15px;
     color: #999999;
   
@@ -340,7 +300,7 @@
   }
   
   .login100-form-btn {
-    font-family: Montserrat-Bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #e0e0e0;
@@ -398,136 +358,4 @@
     opacity: 1;
   }
   
-  /*------------------------------------------------------------------
-  [ Button sign in with ]*/
-  .btn-face,
-  .btn-google {
-    font-family: Raleway-Bold;
-    font-size: 16px;
-    line-height: 1.2;
-  
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc((100% - 10px) / 2);
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid #e6e6e6;
-    background-color: #fff;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  
-  
-  .btn-face {
-    color: #3b5998;
-  }
-  
-  .btn-face i {
-    font-size: 20px;
-    margin-right: 10px;
-    padding-bottom: 1px;
-  }
-  
-  .btn-google {
-    color: #555555;
-  }
-  
-  .btn-google img {
-    width: 19px;
-    margin-right: 10px;
-    padding-bottom: 1px;
-  }
-  
-  
-  .btn-face:hover,
-  .btn-google:hover {
-    border-color: #d33f8d;
-  }
-  
-  
-  
-  /*------------------------------------------------------------------
-  [ Alert validate ]*/
-  
-  .validate-input {
-    position: relative;
-  }
-  
-  .alert-validate::before {
-    content: attr(data-validate);
-    position: absolute;
-    max-width: 70%;
-    background-color: white;
-    border: 1px solid #c80000;
-    border-radius: 14px;
-    padding: 4px 25px 4px 10px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 8px;
-    pointer-events: none;
-  
-    font-family: Montserrat-Bold;
-    color: #c80000;
-    font-size: 13px;
-    line-height: 1.4;
-    text-align: left;
-  
-    visibility: hidden;
-    opacity: 0;
-  
-    -webkit-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
-    -moz-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-  
-  .alert-validate::after {
-    content: "\f06a";
-    font-family: FontAwesome;
-    display: block;
-    position: absolute;
-    color: #c80000;
-    font-size: 15px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 13px;
-  }
-  
-  .alert-validate:hover:before {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  @media (max-width: 992px) {
-    .alert-validate::before {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-  
-  /*//////////////////////////////////////////////////////////////////
-  [ responsive ]*/
-  
-  @media (max-width: 576px) {
-    .wrap-login100 {
-      padding-top: 80px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
+
