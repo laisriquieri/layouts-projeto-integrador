@@ -6,16 +6,16 @@ body {
   min-height: 100%;
 }
 
-
-
-#conteudo {
-	width: 70%;
-	float: left;
-	text-align: center;
+h3 {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  color: #707070;
+  margin-bottom: -33px;
+  margin-left: 50px;
+  margin-top: 16px;
 }
 
 ul {
-  
   width: 100%;
 }
 
@@ -36,7 +36,6 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 
 #navegacao{
@@ -76,7 +75,6 @@ li a:hover {
   margin-top: 22px;
 }
 
-
 #pesquisar {
   margin-top: 22px;
   margin-bottom: 15px;
@@ -89,13 +87,10 @@ li a:hover {
   float: right;
 }
 
-
-
 table {
   margin-left: 60px;
   border-collapse: collapse;
   width: 75%;
-  
 }
 
 th, td {
@@ -119,7 +114,6 @@ th {
   box-shadow: -3px -5px 6px #00000029;
 }
 
-
 #cor {
   color:#707070;
 }
@@ -130,7 +124,6 @@ th {
   margin-right: 55px;
   margin-top: -20px;
 }
-
 
 #tabela {
   margin-left: auto;
@@ -165,15 +158,6 @@ th {
 
 #add-button{
   padding-top: 17px;
-}
-
-.label{
-  position: relative;
-  padding-top: 13px;
-  margin-top: 30px;
-  margin-left: 75px;
-  width: 350px;
-  float: left;
 }
 
 .label input{
@@ -255,7 +239,7 @@ th {
   color: #707070;
 }
 .label-float input:focus:required:invalid{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #707070;
 }
 .label-float input:required:invalid + label:before{
   content: '';
@@ -278,16 +262,19 @@ th {
   float: right;
 }
 
+.botoes {
+  float: none;
+}
+
 .botao-cadastrar {
   font-family: Verdana, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #e0e0e0;
+  color: #ffffff;
   width: 200px;
   height: 50px;
   border-radius: 25px;
-  background: #333333;
-  margin-left: 160px;
+  background: #707070;
   margin-top: 80px;
   justify-content: center;
   align-items: center;
@@ -295,6 +282,31 @@ th {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  position:static;
-  z-index: 26;
+  border: 2px solid #707070;
+  float: right;
+  margin-right: 130px;
+}
+
+.botao-cadastrar:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.botao-cancelar {
+  border: 2px solid #707070;
+  border-radius: 25px;
+  background-color: white;
+  color: #707070;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-top: 80px;
+  float: left;
+  margin-left: 130px;
+}
+
+.botao-cancelar:hover {
+  background-color: #333333;
+  color: white;
 }

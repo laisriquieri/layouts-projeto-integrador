@@ -18,6 +18,7 @@
     
 	<div>
         <ul class="navbar">
+          <img id="logo" src="images/logo.png">
             <li><a id="navegacao" href="#sair"><span class="material-icons">logout</span></a></li>
         </ul>
     </div>
@@ -25,6 +26,9 @@
     
 
     <div id="lista-cadastro">
+
+      <h3>Nova Ordem de Serviço</h3>
+
       <div id="busca">
       </div>
 
@@ -32,6 +36,13 @@
       <input type="text" placeholder=" " required/>
       <label>Cliente</label>
       </div>
+
+      <datalist id="lista-dados">
+        <option> teste1</option>
+        <option> teste2</option>
+        <option> teste3</option>
+        <option> teste4</option>
+      </datalist>
     
       <div class="label-float">
       <input type="date" placeholder=" " required/>
@@ -48,29 +59,29 @@
       <label>Relato do Cliente</label>
       </div>
 
-      <div class="label">Serviços
-        <select >
-          <option>Selecione</option>
-          <option>Formatação</option>
-          <option>Manutenção em hardware</option>
-          <option>Teste</option>
-        </select>
-          <input> 
-          </input>
+      <div class="label-float">
+        <input list="lista-servicos" type="text" placeholder=" " required/>
+        <label>Selecione um Serviço</label>
       </div>
 
-      <div class="label">Produtos
-        <select >
-          <option>Selecione</option>
-          <option>Teclado</option>
-          <option>Mouse</option>
-          <option>Memória DDR3</option>
-          <option>Pendrive</option>
-          <option>Teste</option>
-        </select>
-          <input> 
-          </input>
+      <datalist id="lista-servicos">
+        <option>Formatação</option>
+        <option>Manutenção em hardware</option>
+        <option>Teste</option>
+      </datalist>
+
+      <div class="label-float">
+        <input list="lista-produtos" type="text" placeholder=" " required/>
+        <label>Selecione um Produto</label>
       </div>
+
+      <datalist id="lista-produtos">
+        <option>Teclado</option>
+        <option>Mouse</option>
+        <option>Memória DDR3</option>
+        <option>Pendrive</option>
+        <option>Teste</option>
+      </datalist>
 
       <div class="label-float">
         <input type="number"  placeholder=" " required/>
@@ -92,30 +103,43 @@
         <label>Data da Entrega</label>
       </div>
 
-      <div class="label">Status
-        <select >
-          <option>Selecione</option>
-          <option>Em análise</option>
-          <option>Orçamento enviado</option>
-          <option>Orçamento aprovado</option>
-          <option>Cancelado</option>
-          <option>Em andamento</option>
-          <option>Pronto para entrega</option>
-          <option>Entregue</option>
-        </select>
-          <input> 
-          </input>
+      <div class="label-float">
+        <input list="lista-status" type="text" placeholder=" " required/>
+        <label>Selecione um Status</label>
       </div>
+
+      <datalist id="lista-status">
+        <option>Em análise</option>
+        <option>Orçamento enviado</option>
+        <option>Orçamento aprovado</option>
+        <option>Cancelado</option>
+        <option>Em andamento</option>
+        <option>Pronto para entrega</option>
+        <option>Entregue</option>
+      </datalist>
 
       <div class="label-float">
-        <input type="text" placeholder=" "/>
-        <label>Forma de Pagamento </label>
+        <input list="lista-pagamento" type="text" placeholder=" " required/>
+        <label>Selecione uma Forma de Pagamento</label>
       </div>
 
-      <button class="botao-cadastrar">
-        Cadastrar
-      </button>
-  
+      <datalist id="lista-pagamento">
+        <option>Dinheiro</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Pix</option>
+      </datalist>
+
+      <div class="botoes">
+        <button class="botao-cancelar">
+          Cancelar
+        </button>
+
+        <button class="botao-cadastrar">
+          Cadastrar
+        </button>
+      </div>
+
     </div>
 
     
