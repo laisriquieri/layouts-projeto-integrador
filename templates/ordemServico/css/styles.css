@@ -6,9 +6,7 @@ body {
   min-height: 100%;
 }
 
-#maluco{
-  margin-top: 0;
-}
+
 
 #conteudo {
 	width: 70%;
@@ -21,16 +19,24 @@ ul {
   width: 100%;
 }
 
+#logo {
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+}
+
 .navbar {
   background-image: linear-gradient( to right, #F8F8F8, #343434);
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
+
 }
 
 #navegacao{
@@ -63,6 +69,27 @@ li a:hover {
   opacity: 1;
   float: right;
 }
+
+#icone-pesquisa {
+  float: right;
+  margin-right: 30px;
+  margin-top: 22px;
+}
+
+
+#pesquisar {
+  margin-top: 22px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 250px;
+  font-size: 16px;
+  float: right;
+}
+
+
 
 table {
   margin-left: 60px;
@@ -138,4 +165,136 @@ th {
 
 #add-button{
   padding-top: 17px;
+}
+
+.label{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 30px;
+  margin-left: 75px;
+  width: 350px;
+  float: left;
+}
+
+.label input{
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 350px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius: 0;
+
+}
+
+.label input:focus{
+  border-bottom: 2px solid #707070;
+}
+
+.label input::placeholder{
+  color:transparent;
+}
+
+.label label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 50px;
+  margin-left: 75px;
+  width: 350px;
+  float: left;
+}
+
+.label-float input{
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 350px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius: 0;
+
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #707070;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+  color: #707070;
+}
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #707070;
+}
+
+#lista-cadastro {
+  margin-top: 160px;
+  width: 970px;
+  height: 760px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: -3px -5px 6px #00000024;
+  border-radius: 15px;
+  opacity: 1;
+  float: right;
+}
+
+.botao-cadastrar {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: #333333;
+  margin-left: 160px;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position:static;
+  z-index: 26;
 }

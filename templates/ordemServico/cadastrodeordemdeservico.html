@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Ordem de Serviços</title>
+	<title>Cadastro de Ordem de Serviços</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	
+
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--===============================================================================================-->
 
 
@@ -17,28 +18,110 @@
     
 	<div>
         <ul class="navbar">
-            <li><a id="navegacao" href="#sair">Sair</a></li>
+            <li><a id="navegacao" href="#sair"><span class="material-icons">logout</span></a></li>
         </ul>
     </div>
     
-      
+    
 
-    <div id="lista">
-        <div>
-            <input type="text" name="input" value="nome" >
-            <form id="frmDate">
-                <label for="data">Selecione uma data:</label>
-                <input type="date" id="data" name="data">
-        </form>
-        <h2 id="resultado"></h2>
-               
-        </div>
+    <div id="lista-cadastro">
+      <div id="busca">
+      </div>
+
+      <div class="label-float">
+      <input type="text" placeholder=" " required/>
+      <label>Cliente</label>
+      </div>
+    
+      <div class="label-float">
+      <input type="date" placeholder=" " required/>
+      <label>Data da Entrada</label>
+      </div>
+
+      <div class="label-float">
+      <input type="text" placeholder=" " required/>
+      <label>Equipamento do Cliente</label>
+      </div>
+
+      <div class="label-float">
+      <input type="text" placeholder=" " required/>
+      <label>Relato do Cliente</label>
+      </div>
+
+      <div class="label">Serviços
+        <select >
+          <option>Selecione</option>
+          <option>Formatação</option>
+          <option>Manutenção em hardware</option>
+          <option>Teste</option>
+        </select>
+          <input> 
+          </input>
+      </div>
+
+      <div class="label">Produtos
+        <select >
+          <option>Selecione</option>
+          <option>Teclado</option>
+          <option>Mouse</option>
+          <option>Memória DDR3</option>
+          <option>Pendrive</option>
+          <option>Teste</option>
+        </select>
+          <input> 
+          </input>
+      </div>
+
+      <div class="label-float">
+        <input type="number"  placeholder=" " required/>
+        <label>Valor</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" placeholder=" " required/>
+        <label>Telefone do Cliente</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" placeholder=" "/>
+        <label>Observações do Técnico</label>
+      </div>
+
+      <div class="label-float">
+        <input type="date" placeholder=" " required/>
+        <label>Data da Entrega</label>
+      </div>
+
+      <div class="label">Status
+        <select >
+          <option>Selecione</option>
+          <option>Em análise</option>
+          <option>Orçamento enviado</option>
+          <option>Orçamento aprovado</option>
+          <option>Cancelado</option>
+          <option>Em andamento</option>
+          <option>Pronto para entrega</option>
+          <option>Entregue</option>
+        </select>
+          <input> 
+          </input>
+      </div>
+
+      <div class="label-float">
+        <input type="text" placeholder=" "/>
+        <label>Forma de Pagamento </label>
+      </div>
+
+      <button class="botao-cadastrar">
+        Cadastrar
+      </button>
+  
     </div>
 
     
     <div class="barra" >
         <ul>
-          <li class="nav-item" >
+          <li class="nav-item">
             <a id="cor" class="nav-link" href="#">Ordem de Serviço</a>
           </li>
           <li class="nav-item">
@@ -59,6 +142,7 @@
         </ul>
       </div>
 
+      
 	
 </body>
 </html>
